@@ -1,186 +1,90 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Portfólio de artes - Seu Nome. Ilustrações, concept art e design.">
-  <title>Seu Nome — Portfólio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfólio de artes - Seu Nome. Ilustrações e Design.">
+<title>Seu Nome — Portfólio</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-  <!-- Normalize + Styles -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- AOS (animation on scroll) CDN -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav" id="top">
-    <div class="container nav-inner">
-      <div class="brand">
-        <a href="#home"><span class="logo">SeuNome</span></a>
-      </div>
-      <nav class="menu" id="menu">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">Sobre</a>
-        <a href="#contact">Contato</a>
-        <button class="btn-ghost" id="theme-toggle" aria-label="Alternar tema">🌙</button>
-      </nav>
-      <button class="hamburger" id="hamb">☰</button>
-    </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="container hero-inner" data-aos="fade-up">
-        <div class="hero-text">
-          <h1>Transformando ideias em arte</h1>
-          <p class="lead">Ilustrações, concept art e design visual — trabalhos selecionados.</p>
-          <div class="cta">
-            <a class="btn" href="#portfolio">Ver portfólio</a>
-            <a class="btn btn-outline" href="#contact">Contrate-me</a>
-          </div>
-        </div>
-        <figure class="hero-figure" aria-hidden="true">
-          <img src="img/hero.jpg" alt="" loading="lazy">
-        </figure>
-      </div>
-    </section>
-
-    <!-- FILTERS + GALLERY -->
-    <section id="portfolio" class="section">
-      <div class="container">
-        <div class="section-head" data-aos="fade-up">
-          <h2>Portfólio</h2>
-          <p>Filtre por categoria ou clique em uma imagem para ampliar.</p>
-        </div>
-
-        <div class="filters" data-aos="fade-up" data-aos-delay="100">
-          <button class="filter active" data-filter="all">Todos</button>
-          <button class="filter" data-filter="illustration">Ilustração</button>
-          <button class="filter" data-filter="concept">Concept</button>
-          <button class="filter" data-filter="graphic">Design</button>
-        </div>
-
-        <div class="grid" id="gallery" data-aos="fade-up" data-aos-delay="200">
-          <!-- Adicione suas imagens em /img e ajuste os data-category -->
-          <figure class="card" data-category="illustration">
-            <img src="img/arte1.jpg" alt="Arte 1" loading="lazy">
-            <figcaption>Arte 1 — Ilustração</figcaption>
-          </figure>
-
-          <figure class="card" data-category="concept">
-            <img src="img/arte2.jpg" alt="Arte 2" loading="lazy">
-            <figcaption>Arte 2 — Concept</figcaption>
-          </figure>
-
-          <figure class="card" data-category="graphic">
-            <img src="img/arte3.jpg" alt="Arte 3" loading="lazy">
-            <figcaption>Arte 3 — Design</figcaption>
-          </figure>
-
-          <figure class="card" data-category="illustration">
-            <img src="img/arte4.jpg" alt="Arte 4" loading="lazy">
-            <figcaption>Arte 4 — Ilustração</figcaption>
-          </figure>
-
-          <figure class="card" data-category="concept">
-            <img src="img/arte5.jpg" alt="Arte 5" loading="lazy">
-            <figcaption>Arte 5 — Concept</figcaption>
-          </figure>
-
-          <figure class="card" data-category="graphic">
-            <img src="img/arte6.jpg" alt="Arte 6" loading="lazy">
-            <figcaption>Arte 6 — Design</figcaption>
-          </figure>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-      <div class="container" data-aos="fade-up">
-        <h2>Sobre Mim</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>Sou artista visual especializado em ilustração e concept art. Trabalho com encomendas, projetos editoriais e identidade visual. Minha linguagem mistura traço orgânico com tratamento digital, buscando sempre narrativas visuais fortes.</p>
-            <ul class="skills">
-              <li>Ilustração digital</li>
-              <li>Concept art</li>
-              <li>Design editorial</li>
-              <li>Comissões e freelances</li>
-            </ul>
-            <p class="small">Disponível para trabalho remoto e presencial. Entre em contato para orçamento.</p>
-          </div>
-          <div class="about-photo" aria-hidden="true">
-            <img src="img/about.jpg" alt="Foto sobre mim" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <div class="container" data-aos="fade-up">
-        <h2>Contato</h2>
-        <div class="contact-grid">
-          <form class="contact-form" id="contact-form" action="https://formspree.io/f/yourformid" method="POST">
-            <label><input type="text" name="name" placeholder="Seu nome" required></label>
-            <label><input type="email" name="email" placeholder="Seu e-mail" required></label>
-            <label><input type="text" name="subject" placeholder="Assunto"></label>
-            <label><textarea name="message" rows="6" placeholder="Mensagem" required></textarea></label>
-            <div class="form-actions">
-              <button type="submit" class="btn">Enviar mensagem</button>
-              <button type="reset" class="btn btn-outline">Limpar</button>
-            </div>
-            <p class="small">Opcional: substitua o action pelo endpoint do EmailJS ou Formspree para receber por e-mail.</p>
-          </form>
-
-          <aside class="contact-info">
-            <h3>Vamos conversar</h3>
-            <p>Email: <a href="mailto:seunome@email.com">seunome@email.com</a></p>
-            <p>Instagram: <a href="https://instagram.com/" target="_blank" rel="noreferrer">@seunome</a></p>
-            <div class="socials">
-              <a href="#" aria-label="Instagram">IG</a>
-              <a href="#" aria-label="Behance">BE</a>
-              <a href="#" aria-label="ArtStation">AS</a>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- LIGHTBOX / MODAL -->
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <button class="lb-close" aria-label="Fechar">✕</button>
-    <button class="lb-prev" aria-label="Anterior">‹</button>
-    <div class="lb-content">
-      <img id="lb-img" src="" alt="">
-      <p id="lb-caption"></p>
-    </div>
-    <button class="lb-next" aria-label="Próximo">›</button>
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <div class="brand"><a href="#home"><span class="logo">SeuNome</span></a></div>
+    <nav class="menu">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+    </nav>
   </div>
+</header>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="foot-grid">
-        <div>
-          <strong>SeuNome</strong>
-          <p>Portfólio — Ilustrações e Design</p>
-        </div>
-        <div>
-          <p>© 2025 • Desenvolvido por Você</p>
-        </div>
-      </div>
+<main>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <img src="img/hero.jpg" alt="Arte principal" loading="lazy">
+    <div class="hero-text">
+      <h1>Transformando ideias em arte</h1>
+      <p>Ilustrações, concept art e design visual — trabalhos selecionados.</p>
+      <a class="btn" href="#portfolio">Ver portfólio</a>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+<!-- PORTFÓLIO -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <h2>Portfólio</h2>
+    <div class="grid">
+      <figure class="card"><img src="img/arte1.jpg" alt="Arte 1"><figcaption>Arte 1</figcaption></figure>
+      <figure class="card"><img src="img/arte2.jpg" alt="Arte 2"><figcaption>Arte 2</figcaption></figure>
+      <figure class="card"><img src="img/arte3.jpg" alt="Arte 3"><figcaption>Arte 3</figcaption></figure>
+      <figure class="card"><img src="img/arte4.jpg" alt="Arte 4"><figcaption>Arte 4</figcaption></figure>
+      <figure class="card"><img src="img/arte5.jpg" alt="Arte 5"><figcaption>Arte 5</figcaption></figure>
+      <figure class="card"><img src="img/arte6.jpg" alt="Arte 6"><figcaption>Arte 6</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="about" class="section about">
+  <div class="container">
+    <h2>Sobre Mim</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Sou artista visual especializado em ilustração e concept art. Trabalho com encomendas, projetos editoriais e identidade visual.</p>
+      </div>
+      <div class="about-photo"><img src="img/about.jpg" alt="Sobre mim" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 SeuNome — Portfólio</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
